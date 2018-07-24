@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content%}
+    <h1>This is my page!</h1>
+    <img src="/static/img/chankoo.png"></img>
+    {% for i in users123 %}
+        <p>{{ i.email }}{{ i.username }}</p>
+    {% endfor %}
+{% endblock %}
